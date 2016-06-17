@@ -11,6 +11,7 @@ content=$(tmux show-buffer 2> /dev/null)
 
 curl --data-urlencode token="${token}" \
      --data-urlencode filename="${filename}" \
+     --data-urlencode filetype="shell" \
      --data-urlencode channels="${channels}" \
      --data-urlencode title="${title}" \
      --data-urlencode content="${content}" \
